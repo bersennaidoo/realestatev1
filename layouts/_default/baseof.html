@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <div class="container-xxl bg-white p-0">
+    {{ partial "spinnerp/spinnerp.html" . }}
+    {{ partial "headerp/headerp.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>
